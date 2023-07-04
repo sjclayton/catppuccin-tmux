@@ -41,6 +41,7 @@ main() {
   # status
   set status "on"
   set status-bg "${thm_bg}"
+  #set status-bg "${thm_gray}"
   set status-justify "left"
   set status-left-length "100"
   set status-right-length "100"
@@ -97,11 +98,11 @@ main() {
 
   local show_directory_in_window_status
   #readonly show_directory_in_window_status="#[fg=$thm_bg,bg=$thm_blue] #I #[fg=$thm_fg,bg=$thm_gray] #{b:pane_current_path} "
-  readonly show_directory_in_window_status="#[fg=$thm_fg,bg=$thm_gray]  #W  #[fg=$thm_bg,bg=$thm_blue] #I#[fg=$thm_blue,bg=$thm_gray]$left_separator"
+  readonly show_directory_in_window_status="#[fg=$thm_black7,bg=$thm_gray]  #W  #[fg=$thm_bg,bg=$thm_blue] #I#[fg=$thm_blue,bg=$thm_gray]$left_separator"
 
   local show_directory_in_window_status_current
   #readonly show_directory_in_window_status_current="#[fg=$thm_bg,bg=$thm_orange] #I #[fg=$thm_fg,bg=$thm_bg] #{b:pane_current_path} "
-  readonly show_directory_in_window_status_current="#[fg=colour255,bg=$thm_gray]  #(echo '#{pane_current_path}' | rev | cut -d'/' -f-2 | rev)  #[fg=colour232,bg=$thm_orange] #I#[fg=$thm_orange,bg=$thm_gray]$left_separator"
+  readonly show_directory_in_window_status_current="#[fg=$thm_fg,bg=$thm_gray]  #(echo '#{pane_current_path}' | rev | cut -d'/' -f-2 | rev)  #[fg=colour232,bg=$thm_magenta] #I#[fg=$thm_magenta,bg=$thm_gray]$left_separator"
 
   local show_window_in_window_status
   readonly show_window_in_window_status="#[fg=$thm_fg,bg=$thm_bg] #W #[fg=$thm_bg,bg=$thm_blue] #I#[fg=$thm_blue,bg=$thm_bg]$left_separator#[fg=$thm_fg,bg=$thm_bg,nobold,nounderscore,noitalics] "
