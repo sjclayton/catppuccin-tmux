@@ -124,6 +124,10 @@ main() {
   local music
   readonly music="#[fg=$thm_cyan,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_cyan] #[fg=$thm_fg,bg=$thm_gray] #{playerctl_short} "
 
+  local left_add
+  readonly left_add="#[fg=$thm_fg,bg=$thm_gray]#{pomodoro_status}"
+
+
   # Right column 1 by default shows the Window name.
   local right_column1=$show_window
 
@@ -155,7 +159,7 @@ main() {
   fi
 
 
-  set status-left ""
+  set status-left "${left_add}"
 
   set status-right "${right_column1},${right_column2}"
 
