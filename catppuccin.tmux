@@ -123,6 +123,9 @@ main() {
   local music
   readonly music="#[fg=$thm_cyan,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_cyan] #[fg=$thm_fg,bg=$thm_gray] #{playerctl_short} "
 
+  local bluetooth
+  readonly bluetooth="#[fg=$thm_flamingo,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_flamingo]󰂯 #[fg=$thm_fg,bg=$thm_gray] #(~/scripts/btbatt --no-color --nocaps) "
+
   local left_add
   readonly left_add="#[fg=$thm_fg,bg=$thm_gray]#{pomodoro_status}"
 
@@ -153,7 +156,7 @@ main() {
   fi
 
   if [[ "${date_time}" != "off" ]]; then
-    right_column2=$right_column2$music$show_date_time
+    right_column2=$right_column2$music$bluetooth$show_date_time
   fi
 
   set status-left "${left_add}"
