@@ -118,7 +118,7 @@ main() {
   readonly show_host="#[fg=$thm_blue,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_blue]󰒋 #[fg=$thm_fg,bg=$thm_gray] #H "
 
   local show_date_time
-  readonly show_date_time="#[fg=$thm_yellow,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_yellow]󰃰 #[fg=$thm_fg,bg=$thm_gray] #(~/scripts/date.sh) "
+  readonly show_date_time="#[fg=$thm_yellow,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_yellow]󰃰 #[fg=$thm_fg,bg=$thm_gray] #(~/bin/dated) "
 
   local music
   readonly music="#[fg=$thm_cyan,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_cyan] #[fg=$thm_fg,bg=$thm_gray] #(~/bin/player-status) "
