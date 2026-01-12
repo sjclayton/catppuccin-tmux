@@ -121,7 +121,7 @@ main() {
   readonly show_date_time="#[fg=$thm_yellow,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_yellow]󰃰 #[fg=$thm_fg,bg=$thm_gray] #(~/bin/dated) "
 
   local music
-  readonly music="#[fg=$thm_cyan,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_cyan] #[fg=$thm_fg,bg=$thm_gray] #(~/bin/player-status -center 35) "
+  readonly music="#[fg=$thm_cyan,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_cyan] #[fg=$thm_fg,bg=$thm_gray] #(~/bin/player-status -center) "
 
   local bluetooth
   readonly bluetooth="#[fg=$thm_flamingo,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_flamingo]󰂯 #[fg=$thm_fg,bg=$thm_gray] #(~/bin/btbatt --no-color) "
